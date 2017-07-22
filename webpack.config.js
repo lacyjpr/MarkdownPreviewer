@@ -1,3 +1,5 @@
+// Boilerplate credit Kornil: https://github.com/Kornil/simple-react-app
+
 const path = require('path');
 const webpack = require('webpack');
 const HTMLWebpackPlugin = require('html-webpack-plugin');

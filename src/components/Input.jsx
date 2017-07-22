@@ -1,9 +1,14 @@
 import React from 'react';
 
-const Input = () => (
-  <div>
-    <h2>Input Component</h2>
-  </div>
-);
+class Input extends React.Component {
+	render() {
+		return (
+			<textarea className="input" onChange={this.props.onChange} value={this.props.value}></textarea>
+		);
+	}
+
+
+}
+
 
 export default Input;

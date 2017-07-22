@@ -1,9 +1,13 @@
 import React from 'react';
 
-const Output = () => (
-  <div>
-    <h2>Output Component</h2>
-  </div>
-);
+
+class Output extends React.Component {
+	render() {
+		return (
+			<div dangerouslySetInnerHTML={this.props.markDown} />
+		);
+
+	}
+}
 
 export default Output;
