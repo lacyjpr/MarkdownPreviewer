@@ -7,7 +7,7 @@ class Container extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            text: '# test'
+            text: 'Markdown Previewer\n==================\n\n# Heading 1\n## Heading 2 \n### Heading 3\n#### Heading 4\n##### Heading 5\n\nParagraphs are separated by a blank line.\n\nLeave 2 spaces at the end of a line to make a line break\n\nText attributes *italic*, **bold**, \n`monospace`, ~~strikethrough~~ .\n\nUnordered list:\n\n  * apples\n  * oranges\n  * pears\n\nOrdered list:\n\n  1. apples\n  2. oranges\n  3. pears\n\n\n *[Wikipedia](https://www.wikipedia.org/)*'
         };
         this.handleChange = this.handleChange.bind(this);
         this.setState = this.setState.bind(this);	
