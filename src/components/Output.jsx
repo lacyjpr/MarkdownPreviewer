@@ -4,7 +4,7 @@ import React from 'react';
 class Output extends React.Component {
     render() {
         return (
-            <div dangerouslySetInnerHTML={this.props.markDown} />
+            <div className="output" dangerouslySetInnerHTML={this.props.markDown} />
         );
     }
 }
