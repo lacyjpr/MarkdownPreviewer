@@ -7,10 +7,10 @@ import './style.scss';
 const root = document.getElementById('root');
 
 render(
-  <AppContainer>
-    <App />
-  </AppContainer>,
-  root,
+    <AppContainer>
+        <App />
+    </AppContainer>,
+    root,
 );
 
 if (module.hot) module.hot.accept(App, () => render(App));
