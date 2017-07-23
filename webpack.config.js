@@ -17,6 +17,7 @@ const DefinePluginConfig = new webpack.DefinePlugin({
 });
 
 const UglifyJsPluginConfig = new webpack.optimize.UglifyJsPlugin({
+    sourceMap: true,
     beautify: false,
     mangle: {
         screw_ie8: true,
@@ -40,6 +41,7 @@ module.exports = {
         'react-hot-loader/patch',
         path.join(__dirname, '/src/index.jsx'),
     ],
+    devtool: 'cheap-module-source-map',
     module: {
         loaders: [
             {
